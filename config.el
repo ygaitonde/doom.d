@@ -92,3 +92,7 @@
 )
 
 (setq lsp-clients-typescript-max-ts-server-memory 8192)
+
+;; Map leader + l to open lsp-ui side window
+(map! :leader
+      :desc "LSP UI side window" "l" #'lsp-ui-imenu)
